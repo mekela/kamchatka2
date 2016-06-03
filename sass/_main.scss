@@ -1,0 +1,149 @@
+// Normally mainpage styles
+ 
+ /*----------header----------*/
+
+ .header{
+	@include povh('');
+	background:rgba(0,0,0, 0.5);
+	color: #fff;
+ }
+ 	.head_address{
+ 		font-size: 12.5px;
+ 		color: #ffffff;
+ 		height: 33px;
+ 		background:#c8245a;
+ 		text-align: right;
+ 		line-height: 33px;
+ 		img{
+ 			position: relative;
+ 			top: 5px;
+ 			left: -5px;
+ 		}
+ 	}
+	.head_top{
+		@include povh('');
+		text-align: center;
+		.logo1{
+			float: left;
+		}
+		.logo2{
+			@include povh('');
+			display: block;
+			padding: 45px 90px 0 0;
+			text-align: right;
+			box-sizing: border-box;
+		}
+		.head_contacts{
+			float: right;
+			line-height: 1.1;
+			padding: 32px 0 0 0;
+			text-align: left;
+			a{
+				display: block;
+				font-size: 17px;
+				text-decoration: none;
+				&.tel{
+					font-size: 25px;
+				}
+			}
+		}
+	}
+	.menu{
+		margin: 10px 0 0 0;
+		text-align: center;
+		li{
+			display: inline-block;
+			font-size: 21px;
+			a{
+				text-decoration: none;
+				padding: 10px 15px;
+				display: block;
+				font-size: 21px;
+				&:hover, &.active{
+					background:#711a3a;
+				}
+			}
+		}
+	}
+	.social{
+		bottom: 10px;
+		right: 0px;
+		position: absolute;
+		a{
+			margin-right: 4px;
+			-webkit-filter: brightness(25);
+  			filter: brightness(25);
+			&:hover{
+				-webkit-filter: brightness(1.5);
+  				filter: brightness(1.5);
+			}
+		}
+	}
+/*----------end-header----------*/	
+
+
+/*----------main----------*/
+ 
+ .main{
+	@include povh('');
+	.container{
+		background:rgba(255,255,255, .69);
+	}
+ }
+	
+	.top_slider{
+		position: relative;
+		text-align: center;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		.bx-prev, .bx-next{
+			position: absolute;
+			top: 91px;
+			left: 21px;
+			width: 109px;
+			height: 117px;
+			z-index: 55;
+			@include hide-text;
+			background:url(../img/top_arrow.png) no-repeat center;
+		}
+		.bx-next{
+			@include mirror_flip;
+			left: auto;
+			right: 21px;
+		}
+		.bx-pager{
+			width: 1049px;
+			margin: 0 auto;
+			margin-top: -5px;
+			text-align: right;
+			box-sizing: border-box;
+			padding: 0 60px 0 0;
+			& >div{
+				display: inline-block;
+			}
+			.bx-pager-link{
+				width: 14px;
+				height: 14px;
+				border-radius: 50%;
+				background-color: #fff;
+				box-sizing: border-box;
+				border: 1px solid #4f2438;
+				display: inline-block;
+				@include hide-text;
+				margin: 0 2px;
+				&.active{
+					background:#4f2438;
+				}
+			}
+		}
+	}
+/*----------end main----------*/	
+
+	
+/*----------footer----------*/
+ 
+ .footer{
+	@include povh('');
+ }
+
+/*----------end footer----------*/

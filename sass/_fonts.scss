@@ -1,0 +1,7 @@
+// add fonts here
+@import url(https://fonts.googleapis.com/css?family=Didact+Gothic&subset=latin,cyrillic,cyrillic-ext);
+
+
+//exemple of use:
+@include font(EUROPEEXT, EUROPEEXT);
+@include font(AGLETTERICA, AGLETTERICAULTRACOMPRESSED-ROMAN);
