@@ -2,7 +2,234 @@
 // You can read about usage in https://github.com/paranoida/sass-mediaqueries 
 
 
-//styles for custom device width
+/*styles for custom device width*/
+
+@include mq($max-width: 1200px) {
+  .container, .wrapper{
+  	width: auto;
+  }
+  .title{
+  	&:before, &:after{
+  		display: none;
+  	}
+  }
+  .tour{
+  	& > figure{
+		width: 50%;
+	}
+	article{
+		width: 50%;
+	}
+  }
+  .welcome_block{
+  	margin-top: 45px;
+  }
+}
+
 @include mq($max-width: 1000px) {
-  
+	.social{
+		bottom: 70px;
+	}
+	.top_slider{
+		img{
+			width: 100%;
+		}
+	}
+	.our_services_block figure{
+		width: 24%;
+	}
+	.news_wrap{
+		img{
+			width: 100%;
+		}
+	}
+	.title_tour{
+		font-size: 100px;
+	}
+	.rev_slider .rev_block{
+		width: auto;
+		margin: 0 15px;
+	}
+	.rev_slider{
+		width: auto;
+	}
+	.rev_wrap .bx-next, .rev_wrap .bx-prev{
+		top: auto;
+		bottom: 5%;
+	}
+		.rev_wrap .bx-next.bx-next{
+			left: 1%
+		}
+		.rev_wrap .bx-prev{
+			right: 1%;
+		}
+	.welcome_block > img{
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+	.welcome_block{
+		border: none;
+		margin: 0;
+		section {
+			text-align: center;
+			padding: 0;
+		}
+	}
+	.welcome{
+		height: auto;
+		background-size: cover;
+	}
+}
+
+@include mq($max-width: 760px) {
+	.footer .container{
+		width: auto;
+	}
+	.tour{
+	  	& > figure{
+			width: 100%;
+			float: none;
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+		article{
+			width: 100%;
+			float: none;
+		}
+	  }
+	.head_top .head_contacts{
+		float: right;
+		padding:10px 0 0  30px;
+	}
+	.head_top .logo2{
+		padding: 0;
+		text-align: left;
+		float: left;
+		img{
+			max-width: 100%;
+		}
+	}
+	.menu_trigger{
+		display: block;
+	}
+	.menu{
+		ul{
+			display: none;
+		}
+		li{
+			display: block;
+		}
+	}
+	.social {
+	    bottom: auto;
+	    top: 326px;
+	    right: 33px;
+	}
+	.top_slider .bx-prev, .top_slider .bx-next{
+		top: 20%
+	}
+	.our_services_block figure{
+		width: 48%;
+	}
+}
+
+@include mq($max-width: 612px) {
+	.head_top .logo1{
+		display: none;
+	}
+
+	.social {
+	    bottom: auto;
+	    top: 305px;
+	    right: 23px;
+	}
+	.menu_trigger{
+		text-align: left;
+		padding-left: 20px;
+	}
+	.tour article{
+		height: auto;
+		padding-bottom: 40px
+	}
+
+	.footer nav{
+		display: none;
+	}
+	.foot_contacts{
+		width: 100%;
+		float: none;
+		text-align: center;
+		padding-bottom: 10px
+	}
+	.welcome_block{
+		padding:  10px 0;
+	}
+}
+
+@include mq($max-width: 500px) {
+	.social {
+    bottom: auto;
+    top: 11px;
+    right: auto;
+    left: 12px;
+    text-align: center;
+    width: 100%;
+	}
+	.menu_trigger{
+		text-align: center;
+		padding-left: 0;
+	}
+	.head_address{
+		height: auto;
+		line-height: 1;
+		padding: 5px;
+	}
+	.head_top .head_contacts {
+    float: right;
+    padding: 55px 0 0 30px;
+    text-align: center;
+    width: 100%;
+	}
+	.top_slider .bx-prev, .top_slider .bx-next{
+		width: 50px;
+		height: 50px;
+		background-size: 50px 50px;
+	}
+	.inner{
+		padding: 0 10px;
+	}
+	.news_wrap h2{
+		font-size: 20px;
+		padding: 10px;
+	}
+	.news_wrap figure img{
+		width: 100%;
+	}
+	.title_tour{
+		line-height: 1
+	}
+	.tour article h6, .tour article figure figcaption{
+		font-size: 20px;
+		height: auto;
+	}
+	.rev_title div img{
+		display: none;
+	}
+	.rev_title div{
+		width: auto;
+	}
+	.rev_slider{
+		height: auto;
+	}
+	.rev_slider .rev_block > img{
+		float: none;
+		display: block;
+		margin: 0 auto;
+	}
+	.rev_wrap .bx-next, .rev_wrap .bx-prev{
+		bottom: 65%;
+	}
 }
