@@ -296,6 +296,12 @@ textarea { height: 90px; padding-top: 5px; }
 
 .gallery_block { padding-bottom: 100px; }
 
+.contacts_wrap { padding-bottom: 100px; position: relative; overflow: hidden; }
+
+.contacts_wrap article { float: left; padding: 0 50px 0 0; box-sizing: border-box; width: 50%; }
+
+.contacts_wrap .float_right { width: 50%; padding: 67px 0 0 0; }
+
 /*----------end main----------*/
 /*----------footer----------*/
 .footer { position: relative; overflow: hidden; color: #fff; text-align: center; background: rgba(0, 0, 0, 0.6); padding: 30px 0 150px 0; }
@@ -349,7 +355,10 @@ textarea { height: 90px; padding-top: 5px; }
   .menu li { display: block; }
   .social { bottom: auto; top: 326px; right: 33px; }
   .top_slider .bx-prev, .top_slider .bx-next { top: 20%; }
-  .our_services_block figure { width: 48%; } }
+  .our_services_block figure { width: 48%; }
+  .contacts_wrap { position: relative; overflow: hidden; }
+  .contacts_wrap article { width: 100%; padding: 0; float: none; }
+  .contacts_wrap .float_right { width: 100%; padding: 30px 0 0 0; float: none; } }
 
 @media only screen and (max-width: 612px) { .head_top .logo1 { display: none; }
   .social { bottom: auto; top: 305px; right: 23px; }
