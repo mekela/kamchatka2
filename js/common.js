@@ -23,4 +23,17 @@ $(document).ready(function() {
 	 $( ".menu_trigger" ).click(function() {
 	  $( ".menu ul" ).slideToggle( "slow");
 	});
+
+	 //tab
+	 $(document).ready(function() {
+    
+	    $('.gallery_nav  a').click(function(event){
+	        event.preventDefault();
+	        $('.gallery_nav a').removeClass('active');
+	        $(this).addClass('active');
+	        $('.tab').hide();
+	        $($(this).attr('href')).show();
+	    });
+	    
+	});
 });

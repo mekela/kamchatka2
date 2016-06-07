@@ -350,6 +350,10 @@ textarea { height: 90px; padding-top: 5px; }
 
 .welcome2 h5 { padding: 100px 0 50px 0; text-align: center; font-size: 37px; color: #fff; }
 
+.tab { display: none; }
+
+#tab1 { display: block; }
+
 /*----------end news------*/
 /*styles for custom device width*/
 @media only screen and (max-width: 1200px) { .container, .wrapper { width: auto; }
