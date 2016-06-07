@@ -560,3 +560,89 @@
  	}
 
 /*----------end footer----------*/
+
+/*----------news----------*/
+.news_wrap{
+	position: relative;
+	text-align: center;
+	padding: 75px 0 0 0;
+}
+	.news_block{
+		display: inline-block;
+		width: 413px;
+		margin:0 40px 60px 40px;
+		box-sizing: border-box;
+		border: 12px solid #c8245a;
+		background:#636465;
+		position: relative;
+		vertical-align: top;
+		color: #fff;
+		font-size: 25px;
+		& > img{
+			margin-left: -30px;
+			box-shadow: 4px 4px 1px 1px rgba(0,0,0,.34);
+		}
+		h6{
+			padding: 15px 0;
+			font-size: 25px;
+		}
+		p{
+			color: #fff;
+			text-align: left;
+			padding-bottom: 50px;
+		}
+		.more{
+			text-align: center;
+			padding: 0 21px;
+			margin-bottom: 40px;
+			a{
+				display: block;
+				border: 1px solid #888888;
+				height: 64px;
+				color: #fff;
+				font-size: 16px;
+				font-style: normal;
+				text-decoration: none;
+				line-height: 64px;
+				&:hover{
+					border-color: #fff;
+				}
+			}
+		}
+	}
+		.details{
+			text-align: center;
+			padding: 0 21px;
+			margin-bottom: 40px;
+			a{
+				display: block;
+				border: 2px solid #00a0e3;
+				height: 58px;
+				width: 261px;
+				margin: 0 auto;
+				color: #fff;
+				font-size: 20px;
+				font-style: normal;
+				text-decoration: none;
+				line-height: 58px;
+				&:hover{
+					border-color: #fff;
+				}
+			}
+		}
+	.welcome2{
+		height: 309px;
+		background:url(../img/welcome_bg2.jpg) no-repeat center;
+		.float_right{
+			height: 309px;
+			width: 422px;
+			background:rgba(0,0,0,0.3);
+		}
+		h5{
+			padding: 100px 0 50px 0;
+			text-align: center;
+			font-size: 37px;
+			color: #fff;
+		}
+	}
+/*----------end news------*/
