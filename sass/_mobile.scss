@@ -80,6 +80,11 @@
 		height: auto;
 		background-size: cover;
 	}
+	.news_page{
+	width: 100%;
+	margin: 0 auto
+	}
+		
 }
 
 @include mq($max-width: 760px) {
