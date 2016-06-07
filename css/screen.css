@@ -288,6 +288,14 @@ textarea { height: 90px; padding-top: 5px; }
 
 .seasons_nav a.summer { text-align: left; background: url(../img/summer.png) no-repeat; }
 
+.gallery_nav { padding: 0px 50px 12px 50px; }
+
+.gallery_nav a { display: inline-block; color: #4f2337; font-size: 17px; padding: 5px 20px; border-radius: 9px; text-decoration: none; }
+
+.gallery_nav a.active, .gallery_nav a:hover { background: #b57a90; }
+
+.gallery_block { padding-bottom: 100px; }
+
 /*----------end main----------*/
 /*----------footer----------*/
 .footer { position: relative; overflow: hidden; color: #fff; text-align: center; background: rgba(0, 0, 0, 0.6); padding: 30px 0 150px 0; }

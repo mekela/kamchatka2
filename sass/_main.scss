@@ -483,6 +483,23 @@
 			}
 		}
 	}
+	.gallery_nav{
+		padding: 0px 50px 12px 50px;
+		a{
+			display: inline-block;
+			color: #4f2337;
+			font-size: 17px;
+			padding: 5px 20px;
+			border-radius: 9px;
+			text-decoration: none;
+			&.active, &:hover{
+				background:#b57a90;
+			}
+		}
+	}
+	.gallery_block{
+		padding-bottom: 100px;
+	}
 /*----------end main----------*/	
 
 	
