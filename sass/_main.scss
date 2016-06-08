@@ -707,3 +707,229 @@
 		}
 	}
 }
+
+
+/*---------------case------------------*/
+.case_top_block{
+	background:url(../img/hasky.jpg) no-repeat top center;
+	height: 886px;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 145px 0  0 0;
+	h2{
+		color: #fefeff;
+		font-size: 66px;
+		padding-bottom: 25px;
+		letter-spacing: 0.11em;
+	}
+	h3{
+		font-size: 41px;
+		color: white;
+		letter-spacing: 0.15em;
+	}
+}
+
+.case_info_wrap{
+	background:#fff;
+	@include povh('');
+	padding: 25px 0;
+	.container{
+		background: white;
+	}
+}
+	.case_title{
+		color: #fff;
+		font-size: 41px;
+		position: relative;
+		margin-bottom: 55px;
+		&:before{
+			content: '';
+			width: 100%;
+			position: absolute;
+			left: 0;
+			top: 48%;
+			height: 2px;
+			background:#56b3e6;
+		}
+		h6{
+			width: 404px;
+			height: 96px;
+			position: relative;
+			z-index: 2;
+			margin: 0 auto;
+			background:#56b3e6;
+			text-align: center;
+			line-height: 96px;
+			color: #fff;
+			font-size: 41px;
+		}
+	}
+	.case_info_list{
+		width: 785px;
+		margin: 0px auto;
+		padding: 0 35px 50px 0 ;
+		section{
+			height: 145px;
+			width: 100%;
+			padding-left: 185px;
+			box-sizing: border-box;
+			position: relative;
+			color: #585656;
+			font-size: 16px;
+			line-height: 20px;
+			img{
+				position: absolute;
+				left: 0;
+				top: 0;
+			}
+			p{
+				display: table-cell;
+				width: inherit;
+				height: inherit;
+				vertical-align: middle;
+				text-align-last: auto;
+			}
+		}
+	}
+	.case_table{
+		width: 870px;
+		margin: 0 auto;
+		th{
+			background:#d7569c;
+			padding-left: 90px;
+			color: #fff;
+			font-size: 33px;
+			text-align: left;
+			text-transform: uppercase;
+		}
+		td{
+			padding: 12px 5px 2px 5px;
+			color: #565656;
+			font-size: 25px;
+			border-bottom: 2px dashed #717171;
+			strong{
+				background:#d7569c;
+				padding: 0 8px;
+				display: inline-block;
+				width: 200px;
+				text-align: center;
+				color: #fff;
+				font-size: 33px;
+				text-transform: uppercase;
+			}
+			em{
+				font-size: 35px;
+				font-style: normal;
+				display: block;
+				text-align: left;
+			}
+			&:last-child{
+				width: 200px;
+				font-size: 35px;
+				text-align: right;
+			}
+		}
+	}
+	.program{
+		background:#f0920c;
+		margin: 33px 0;
+		padding: 30px 0;
+		padding-top: 10px;
+		text-align: center;
+		vertical-align: middle;
+		color: #fff;
+		font-size: 25px;
+		strong{
+			font-size: 66px;
+		}
+		img{
+			position: relative;
+			top: 15px;
+			left: -20px;
+		}
+	}
+
+.case_items{
+	text-align: center;
+	padding: 40px 0;
+	section{
+		width: 312px;
+		height: 312px;
+		display: inline-block;
+		position: relative;
+		background:#d44f68;
+		vertical-align: top;
+		text-align: center;
+		h6{
+			color: #fff;
+			font-size: 25px;
+			width: inherit;
+			height: 312px;
+			vertical-align: middle;
+			display: table-cell;
+			img{
+				display: block;
+				margin: 0 auto;
+				padding: 10px 0;
+			}
+		}
+		&:nth-child(2){
+			background:#4f2438;
+		}
+		&:nth-child(3){
+			background: url(../img/leg2.png) no-repeat top 10px right 10px,  url(../img/leg2.png) no-repeat bottom 10px left 10px;
+			background-color: #5eb552;
+		}
+	}
+}
+
+.my_tour{
+	min-height: 100vh;
+	position: relative;
+	.case_title{
+		margin-top: -45px;
+		margin-bottom: 0;
+		&:before{
+			display: none;
+		}
+	}
+	.button{
+		font-size: 25px;
+		width: 379px;
+		height: 82px;
+		border: 2px solid #56b3e6;
+		background: rgba(0,0,0,.34);
+		border-radius: 0;
+		padding: 0;
+		 position: relative;
+		 margin: 0 auto;
+		 display: block;
+		 &:hover{
+		 	background:#000;
+		 }
+	}
+}
+	.my_tour_form{
+		width: 330px;
+		margin:  0 auto;
+		background:rgba(0,0,0,0.35);
+		text-align: center;
+		padding: 45px 0 0 0;
+		img{
+			padding-bottom: 40px;
+		}
+		div{
+			padding-bottom: 15px;
+			&:last-child{
+				padding-bottom: 0
+			}
+		}
+		em{
+			display: block;
+			font-size: 21px;
+			color: #fff;
+			padding: 45px 0;
+		}
+		
+	}
+/*--------------end-case------------------*/

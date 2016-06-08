@@ -46,9 +46,17 @@ overflow: hidden;
   border: 1px solid #000;
   border-radius: 3px;
   resize:none;
+
+      color: #fff;
+      border: none;
+      background: none;
+      border-radius: 0;
+      text-align: center;
+      font-size: 21px;
+      border-bottom: 2px solid #6b696e;
 }
 @mixin input_focus($input_focus){
-  box-shadow: 0 0 2px #99e6f9;
+ border-color: #fff;
 }
 //end buttons and inputs
 

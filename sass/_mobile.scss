@@ -84,7 +84,15 @@
 	width: 100%;
 	margin: 0 auto
 	}
-		
+	
+	.case_info_list{
+		width: 100%;
+		padding: 0 10px 40px 10px;
+		box-sizing: border-box;
+	}
+	.case_table{
+		width: 100%;
+	}
 }
 
 @include mq($max-width: 760px) {
@@ -250,5 +258,27 @@
 	}
 	.rev_wrap .bx-next, .rev_wrap .bx-prev{
 		bottom: 65%;
+	}
+
+	.case_title h6{
+		width: 100%;
+	}
+	.case_info_list section img{
+		position: static;
+		display: block;
+		margin: 0 auto;
+	}
+	.case_info_list section{
+		padding-left: 0;
+		height: auto;
+		padding-bottom: 50px;
+		p{
+			display: block;
+			text-align: center;
+			padding: 10px 0 0 0;
+		}
+	}
+	.my_tour .button{
+		width: 100%;
 	}
 }
