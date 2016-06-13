@@ -296,6 +296,10 @@ textarea { height: 90px; padding-top: 5px; }
 
 .gallery_block { padding-bottom: 100px; }
 
+.gal { position: relative; overflow: hidden; font-size: 0; }
+
+.gal img { margin: 0.5px; }
+
 .contacts_wrap { padding-bottom: 100px; position: relative; overflow: hidden; }
 
 .contacts_wrap article { float: left; padding: 0 50px 0 0; box-sizing: border-box; width: 50%; }
@@ -464,7 +468,9 @@ textarea { height: 90px; padding-top: 5px; }
   .tour article { width: 50%; }
   .welcome_block { margin-top: 45px; } }
 
-@media only screen and (max-width: 1000px) { .news_wrap { display: block; }
+@media only screen and (max-width: 1000px) { .gal { position: relative; overflow: hidden; font-size: 0; }
+  .gal img { margin: 0.5px; display: block; width: 100%; }
+  .news_wrap { display: block; }
   .social { bottom: 70px; }
   .top_slider img { width: 100%; }
   .our_services_block figure { width: 24%; }

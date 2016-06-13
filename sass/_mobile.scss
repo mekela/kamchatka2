@@ -27,6 +27,15 @@
 }
 
 @include mq($max-width: 1000px) {
+	.gal{
+		@include povh('');
+		font-size: 0;
+		img{
+			margin: 0.5px;
+			display: block;
+			width: 100%;
+		}
+	}
 	.news_wrap{
 		display: block;
 	}

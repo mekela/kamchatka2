@@ -504,7 +504,13 @@
 	.gallery_block{
 		padding-bottom: 100px;
 	}
-
+		.gal{
+			@include povh('');
+			font-size: 0;
+			img{
+				margin: 0.5px;
+			}
+		}
 	.contacts_wrap{
 		padding-bottom: 100px;
 		@include povh('');
