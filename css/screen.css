@@ -158,7 +158,7 @@ textarea { height: 90px; padding-top: 5px; }
 
 .top_slider .bx-pager .bx-pager-link.active { background: #4f2438; }
 
-.about_us { font-size: 16px; color: #4f2438; line-height: 19px; padding-bottom: 20px; text-align: center; background: url(../img/about_img1.png) no-repeat left 50px bottom, url(../img/about_img2.png) no-repeat right 50px bottom; }
+.about_us { font-size: 16px; color: #4f2438; line-height: 19px; padding-bottom: 20px; text-align: center; /*background:url(../img/about_img1.png) no-repeat left 50px bottom, url(../img/about_img2.png) no-repeat right 50px bottom; */ }
 
 .about_us p { padding-bottom: 25px; }
 
