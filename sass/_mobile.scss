@@ -27,6 +27,12 @@
 }
 
 @include mq($max-width: 1000px) {
+	.news_wrap img{
+		height: auto;
+	}
+	.about_us{
+		background: none;
+	}
 	.gal{
 		@include povh('');
 		font-size: 0;

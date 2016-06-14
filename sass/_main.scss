@@ -64,6 +64,27 @@
 				}
 			}
 		}
+		&.fixed{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+			background:#a93350;
+			margin-top: 0;
+			li{
+				a{
+					&:hover, &.active{
+						background:#c6c6c6;
+						color:#a93350; 
+					}
+				}
+			}
+			.menu_trigger{
+				text-align: center !important;
+				padding-top: 10px;
+			}
+		}
 	}
 		.menu_trigger{
 			display: none;
@@ -152,8 +173,8 @@
 		line-height: 19px;
 		padding-bottom: 20px;
 		text-align: center;
-		/*background:url(../img/about_img1.png) no-repeat left 50px bottom, url(../img/about_img2.png) no-repeat right 50px bottom;
-		*/
+		background:url(../img/about_img1.png) no-repeat left 50px bottom, url(../img/about_img2.png) no-repeat right 50px bottom;
+		
 		p{
 			padding-bottom: 25px;
 		}
@@ -248,14 +269,87 @@
 			font-size: 21px;
 			color: #4f2438;
 		}
-		figure{
+		
+	}	
+		.new_posts{
 			padding: 35px 0 0 0;
 			text-align: center;
-			img{
+			font-size: 0;
+			figure{
+				vertical-align: top;
 				width: 33%;
+				display: inline-block;
+				@include povh('');
+				font-size: 20px;
+				@include transition(all 0.5s);
+				a{
+					text-decoration: none;
+					display: block;
+					@include povh('');
+					@include transition(all 0.5s);
+				}
+				img{
+					display: block;
+					width: 120%;
+					position: relative;
+					left: -20%;
+					@include transition(all 0.5s);
+				}
+				figcaption{
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					width: 100%;
+					text-align: left;
+					box-sizing: border-box;
+					padding: 10px;
+					color: #fff;
+					z-index: 5;
+					@include transition(all 0.5s);
+					strong{
+						display: block;
+						font-size: 30px;
+						@include transition(all 0.5s);
+					}
+					p{
+						padding: 0;
+						color: #fff;
+						font-size: 0;
+						opacity: 0;
+						@include transition(all 0.5s);
+					}
+				}
+				&>a:before{
+					content: '';
+					background:rgba(0,0,0, .5);
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					left: 0;
+					top: 0;
+					opacity: 0;
+					z-index: 1;
+					@include transition(all 0.5s);
+				}
+
+				&:hover{
+					&>a:before{
+						opacity: 1;
+					}
+					figcaption{
+						p{
+							padding: 0;
+							color: #fff;
+							font-size: 18px;
+							opacity: 1;
+						}
+					}
+					img{
+						left: 0;
+					}
+				}
 			}
 		}
-	}	
 		.all_news{
 			padding: 40px 0 50px 0;
 			text-align: center;

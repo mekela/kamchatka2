@@ -37,3 +37,13 @@ $(document).ready(function() {
 	    
 	});
 });
+
+$(window).scroll(function() {    
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 400) {
+        $(".menu").addClass("fixed");
+    } else {
+        $(".menu").removeClass("fixed");
+    }
+});
