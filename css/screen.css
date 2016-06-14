@@ -122,19 +122,19 @@ textarea { height: 90px; padding-top: 5px; }
 
 .head_top .head_contacts a.tel { font-size: 25px; }
 
-.menu { margin: 10px 0 0 0; text-align: center; }
+.h_menu { margin: 10px 0 0 0; text-align: center; }
 
-.menu li { display: inline-block; font-size: 21px; }
+.h_menu li { display: inline-block; font-size: 21px; }
 
-.menu li a { text-decoration: none; padding: 10px 15px; display: block; font-size: 21px; }
+.h_menu li a { text-decoration: none; padding: 10px 15px; display: block; font-size: 21px; }
 
-.menu li a:hover, .menu li a.active { background: #711a3a; }
+.h_menu li a:hover, .h_menu li a.active { background: #711a3a; }
 
-.menu.fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 100; background: #a93350; margin-top: 0; }
+.h_menu.fixed { position: fixed; top: 0; left: 0; width: 100%; z-index: 100; background: #a93350; margin-top: 0; }
 
-.menu.fixed li a:hover, .menu.fixed li a.active { background: #c6c6c6; color: #a93350; }
+.h_menu.fixed li a:hover, .h_menu.fixed li a.active { background: #c6c6c6; color: #a93350; }
 
-.menu.fixed .menu_trigger { text-align: center !important; padding-top: 10px; }
+.h_menu.fixed .menu_trigger { text-align: center !important; padding-top: 10px; }
 
 .menu_trigger { display: none; text-align: center; font-size: 30px; text-transform: uppercase; color: #fff; padding-bottom: 20px; }
 
@@ -523,8 +523,8 @@ textarea { height: 90px; padding-top: 5px; }
   .head_top .logo2 { padding: 0; text-align: left; float: left; }
   .head_top .logo2 img { max-width: 100%; }
   .menu_trigger { display: block; }
-  .menu ul { display: none; }
-  .menu li { display: block; }
+  .h_menu ul { display: none; }
+  .h_menu li { display: block; }
   .social { bottom: auto; top: 326px; right: 33px; }
   .top_slider .bx-prev, .top_slider .bx-next { top: 25%; }
   .our_services_block figure { width: 48%; }

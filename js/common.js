@@ -21,7 +21,7 @@ $(document).ready(function() {
 
 	 //menu
 	 $( ".menu_trigger" ).click(function() {
-	  $( ".menu ul" ).slideToggle( "slow");
+	  $( ".h_menu ul" ).slideToggle( "slow");
 	});
 
 	 //tab
@@ -42,8 +42,8 @@ $(window).scroll(function() {
     var scroll = $(window).scrollTop();
 
     if (scroll >= 400) {
-        $(".menu").addClass("fixed");
+        $(".h_menu").addClass("fixed");
     } else {
-        $(".menu").removeClass("fixed");
+        $(".h_menu").removeClass("fixed");
     }
 });
