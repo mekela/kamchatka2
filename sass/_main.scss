@@ -64,28 +64,10 @@
 				}
 			}
 		}
-		&.fixed{
-			position: fixed;
-			top: 0;
-			left: 0;
-			width: 100%;
-			z-index: 100;
-			background:#a93350;
-			margin-top: 0;
-			li{
-				a{
-					&:hover, &.active{
-						background:#c6c6c6;
-						color:#a93350; 
-					}
-				}
-			}
-			.menu_trigger{
-				text-align: center !important;
-				padding-top: 10px;
-			}
-		}
+		
 	}
+
+	
 		.menu_trigger{
 			display: none;
 			text-align: center;
@@ -602,7 +584,8 @@
 		.gal{
 			@include povh('');
 			font-size: 0;
-			img{
+			a{
+				display: inline-block;
 				margin: 0.5px;
 			}
 		}
@@ -817,6 +800,7 @@
 /*---------------case------------------*/
 .case_top_block{
 	background:url(../img/hasky.jpg) no-repeat top center;
+	background-size: contain;
 	height: 886px;
 	text-align: center;
 	box-sizing: border-box;

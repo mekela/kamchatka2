@@ -4,6 +4,33 @@
 
 /*styles for custom device width*/
 
+@include mq($min-width: 900px) {
+	
+.h_menu{
+	&.fixed{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 100;
+			background:#a93350;
+			margin-top: 0;
+			li{
+				a{
+					&:hover, &.active{
+						background:#c6c6c6;
+						color:#a93350; 
+					}
+				}
+			}
+			.menu_trigger{
+				text-align: center !important;
+				padding-top: 10px;
+			}
+		}
+}
+
+}
 @include mq($max-width: 1200px) {
   .container, .wrapper{
   	width: auto;
