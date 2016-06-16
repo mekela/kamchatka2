@@ -56,9 +56,9 @@
 			font-size: 21px;
 			a{
 				text-decoration: none;
-				padding: 10px 15px;
+				padding: 10px 10px;
 				display: block;
-				font-size: 21px;
+				font-size: 19px;
 				&:hover, &.active{
 					background:#711a3a;
 				}
@@ -496,7 +496,8 @@
 			}
 		}
 	.welcome{
-		background:url(../img/welcome_bg.jpg) no-repeat center;
+		background:url(../img/Leto_SD.jpg) no-repeat center;
+		background-attachment: fixed;
 		height: 325px;
 		.container{
 			background: none;
@@ -587,6 +588,30 @@
 			a{
 				display: inline-block;
 				margin: 0.5px;
+				@include transition(all 0.5s);
+				@include povh('');
+				&:before{
+					@include transition(all 0.5s);
+					content: 'Подробнее';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					text-transform: uppercase;
+					width: 100%;
+					text-align: center;
+					font-size: 25px;
+					color: #fff;
+					text-shadow: 1px 1px 1px #000;
+					padding-bottom: 20px;
+					bottom: -100px;
+					opacity: 0;
+				}
+				&:hover{
+					&:before{
+						bottom: 0%;
+						opacity: 1;
+					}
+				}
 			}
 		}
 	.contacts_wrap{
