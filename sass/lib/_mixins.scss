@@ -4,6 +4,17 @@ position: relative;
 overflow: hidden;
 }
 //buttons and inputs
+@mixin newbutton(){
+  border-radius: 0;
+  border: 1px solid #0777a3;
+  background:rgba(0,0,0,0.55);
+  @include transition(all 0.5s);
+  color: #fff;
+  &:hover{
+    background:rgba(0,0,0,0.85);
+  }
+}
+
 
 @mixin button($button){
   @include button_gradient('');

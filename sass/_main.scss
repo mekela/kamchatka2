@@ -4,8 +4,9 @@
 
  .header{
 	@include povh('');
-	background:rgba(0,0,0, 0.5);
+	background:rgba(0,0,0, 0.5) url(../img/head_bg2.jpg) no-repeat  center 33px;
 	color: #fff;
+	height: calc(359px + 33px);
  }
  	.head_address{
  		font-size: 12.5px;
@@ -25,11 +26,12 @@
 		text-align: center;
 		.logo1{
 			float: left;
+			overflow: hidden;
 		}
 		.logo2{
 			@include povh('');
 			display: block;
-			padding: 45px 133px 0 0;
+			margin: 135px 0px 0 0;
 			text-align: right;
 			box-sizing: border-box;
 		}
@@ -49,7 +51,7 @@
 		}
 	}
 	.h_menu{
-		margin: 10px 0 0 0;
+		margin: 4px 0 0px 0;
 		text-align: center;
 		li{
 			display: inline-block;
@@ -191,11 +193,10 @@
 
 	.our_services{
 		.title{
-			color: #fff;
+			//color: #fff;
 			font-family: $europe;
 			&:before, &:after{
-				background:#fff;
-				width: 430px;
+				display: none;
 			}
 		}
 	}
@@ -345,9 +346,8 @@
 				text-transform: uppercase;
 				font-size: 25px;
 				text-decoration: none;
-				&:hover{
-					opacity: 0.8;
-				}
+				@include newbutton();
+				
 			}
 		}
 
@@ -357,6 +357,28 @@
 			background:#00a0e3;
 			height: 80px;
 			line-height: 80px;
+		}
+		.title{
+			text-align: center;
+			margin-bottom: 30px;
+			&:before, &:after{
+				background:#4f2438;
+				width: 100%;
+				top: 0;
+			}
+			div{
+				background:#4f2438;
+				padding: 5px 50px;
+				display: inline-block;
+				transform: skewX(-50deg);
+				span{
+					font-size: 37px;
+					color: #fff;
+					position: relative;
+					display: block;
+					transform: skewX(50deg);
+				}
+			}
 		}
 	}
 		.title_tour{
@@ -409,11 +431,13 @@
 					padding: 0;
 					margin-top: 18px;
 					a{
-						font-size: 25px;
+						font-size: 27px;
 						background: none;
 						height: 75px;
 						line-height: 75px;
 						border: 2px solid #6e1431;
+						text-transform: none;
+						@include newbutton();
 					}
 				}
 			}
@@ -717,9 +741,7 @@
 				font-style: normal;
 				text-decoration: none;
 				line-height: 64px;
-				&:hover{
-					border-color: #fff;
-				}
+				@include newbutton();
 			}
 		}
 	}
@@ -738,9 +760,7 @@
 				font-style: normal;
 				text-decoration: none;
 				line-height: 58px;
-				&:hover{
-					border-color: #fff;
-				}
+				@include newbutton();
 			}
 		}
 	.welcome2{
@@ -829,7 +849,7 @@
 	height: 886px;
 	text-align: center;
 	box-sizing: border-box;
-	padding: 145px 0  0 0;
+	padding: 0px 0  0 0;
 	h2{
 		color: #fefeff;
 		font-size: 66px;
@@ -840,6 +860,9 @@
 		font-size: 41px;
 		color: white;
 		letter-spacing: 0.15em;
+	}
+	img{
+		max-width: 100%;
 	}
 }
 
