@@ -35,6 +35,11 @@
   .container, .wrapper{
   	width: auto;
   }
+  .header{
+  	background:rgba(0,0,0, 0.5) ;
+	color: #fff;
+	height: auto;
+  }
   .title{
   	&:before, &:after{
   		display: none;
@@ -50,6 +55,11 @@
   }
   .welcome_block{
   	margin-top: 45px;
+  }
+  .logo2{
+  	img{
+  		width: 40%;
+  	}
   }
 }
 
@@ -170,8 +180,8 @@
 	}
 	.head_top .logo2{
 		padding: 0;
-		text-align: left;
-		float: left;
+		//text-align: left;
+		//float: left;
 		img{
 			max-width: 100%;
 		}
@@ -215,6 +225,9 @@
 
 	.hide_on_mobile{ 
 		display: none !important;
+	}
+	.head_top .logo2{
+		text-align: center;
 	}
 }
 
@@ -335,5 +348,12 @@
 	}
 	.my_tour .button{
 		width: 100%;
+	}
+	.new_posts figure{
+		display: block;
+		width: 100%;
+		img{
+			width: 120%;
+		}
 	}
 }

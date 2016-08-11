@@ -500,10 +500,12 @@ textarea { height: 90px; padding-top: 5px; }
   .h_menu.fixed .menu_trigger { text-align: center !important; padding-top: 10px; } }
 
 @media only screen and (max-width: 1200px) { .container, .wrapper { width: auto; }
+  .header { background: rgba(0, 0, 0, 0.5); color: #fff; height: auto; }
   .title:before, .title:after { display: none; }
   .tour > figure { width: 50%; }
   .tour article { width: 50%; }
-  .welcome_block { margin-top: 45px; } }
+  .welcome_block { margin-top: 45px; }
+  .logo2 img { width: 40%; } }
 
 @media only screen and (max-width: 1000px) { .news_wrap img { height: auto; }
   .about_us { background: none; }
@@ -535,7 +537,7 @@ textarea { height: 90px; padding-top: 5px; }
   .tour > figure img { display: block; width: 100%; }
   .tour article { width: 100%; float: none; }
   .head_top .head_contacts { float: right; padding: 10px 0 0 30px; }
-  .head_top .logo2 { padding: 0; text-align: left; float: left; }
+  .head_top .logo2 { padding: 0; }
   .head_top .logo2 img { max-width: 100%; }
   .menu_trigger { display: block; }
   .h_menu ul { display: none; }
@@ -546,7 +548,8 @@ textarea { height: 90px; padding-top: 5px; }
   .contacts_wrap { position: relative; overflow: hidden; }
   .contacts_wrap article { width: 100%; padding: 0; float: none; }
   .contacts_wrap .float_right { width: 100%; padding: 30px 0 0 0; float: none; }
-  .hide_on_mobile { display: none !important; } }
+  .hide_on_mobile { display: none !important; }
+  .head_top .logo2 { text-align: center; } }
 
 @media only screen and (max-width: 612px) { .head_top .logo1 { display: none; }
   .social { bottom: auto; top: 305px; right: 23px; }
@@ -575,4 +578,6 @@ textarea { height: 90px; padding-top: 5px; }
   .case_info_list section img { position: static; display: block; margin: 0 auto; }
   .case_info_list section { padding-left: 0; height: auto; padding-bottom: 50px; }
   .case_info_list section p { display: block; text-align: center; padding: 10px 0 0 0; }
-  .my_tour .button { width: 100%; } }
+  .my_tour .button { width: 100%; }
+  .new_posts figure { display: block; width: 100%; }
+  .new_posts figure img { width: 120%; } }
